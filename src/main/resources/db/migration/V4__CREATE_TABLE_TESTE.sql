@@ -1,9 +1,5 @@
-CREATE TABLE teste ( 
-  ID SERIAL PRIMARY KEY, 
-  nome VARCHAR ( 30 ), 
-  email VARCHAR ( 30 ) 
+CREATE TABLE teste (
+    product_no SERIAL,
+    name text,
+    price numeric DEFAULT 9.99
 );
-
-INSERT INTO teste ( nome , email ) 
-  VALUES ( 'Jerry' , ' jerry@example.com ' ), 
-         ( 'George' , 'gerge@example.com ' ) ;
