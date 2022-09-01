@@ -1,2 +1,2 @@
 ALTER TABLE users
-    ALTER COLUMN id TYPE int NOT NULL;
+    ALTER COLUMN id TYPE serial NOT NULL;
