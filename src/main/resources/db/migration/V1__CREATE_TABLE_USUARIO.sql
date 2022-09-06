@@ -1,8 +1,7 @@
 CREATE TABLE usuario (
-	id int NOT NULL,
-	nome varchar(255) NOT NULL,
-	idade integer NOT NULL,
-	CONSTRAINT usuario_pkey PRIMARY KEY (id)
+   id_usuario serial PRIMARY KEY,
+   nome varchar(50) NOT NULL,
+   cpf varchar(11) UNIQUE NOT NULL,
+   email varchar(255) UNIQUE NOT NULL,
+   senha varchar(255) NOT NULL
 );
-
-insert into usuario(id, nome, idade) values (1,  'Nataniel', 29);
